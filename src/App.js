@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Football_Team from './Components/Football_Team';
+import Trainee from './Components/Trainee';
 
 // react component called APP
 
@@ -24,7 +25,12 @@ function App() {
       <br></br>
       <Football_Team teamName="Manchester City" Founded="1880" League="Premiership" />
       <br></br>
-
+      <Trainee name="Rick" age="38" jobtitle="Trainee Software Engineer" />
+      <br></br>
+      <Trainee name="Leo" age="Unknown" jobtitle="Trainee Software Engineer" />
+      <br></br>
+      <Trainee name="Temi" age="Unknown" jobtitle="Trainee Software Engineer" />
+      <br></br>
     </div >
   );
 }

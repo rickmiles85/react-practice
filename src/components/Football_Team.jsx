@@ -3,7 +3,7 @@ function Football_Team(props) {
     // component return html
 
     console.log("Football_Team:", props);
-    console.log("Team Name",props.teamName);
+    console.log("Team Name", props.teamName);
     console.log("Founded", props.Founded);
     console.log("League", props.League);
 

@@ -1,12 +1,19 @@
 // Compentn names MUST be capitalised
-function Trainee() {
+// props is always the tag within the component
+function Trainee(props) {
+
+    
+    console.log("Trainee:", props);
+    console.log("Name:", props.name);
+    console.log("Age", props.age);
+    console.log("Job Title", props.jobtitle);
 
     return (
         <div>
-        <p>Name: Rick M</p>
-        <p>Age: 38</p>
-        <p>Trainee Software Engineer</p>
-    </div>
+        <p>Name: {props.name}</p>
+        <p>Age: {props.age}</p>
+        <p>Job Title: {props.jobtitle}</p>
+        </div>
 );
 }
 // lets you import the function into another file
