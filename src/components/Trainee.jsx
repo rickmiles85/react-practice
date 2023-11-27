@@ -6,4 +6,4 @@ function Trainee() {
 }
 
 // lets you import the function into another file
-export default Trainer;
+export default Trainee;
