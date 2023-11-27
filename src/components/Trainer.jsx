@@ -3,7 +3,7 @@ function Trainer() {
 
     return (
         <header>
-            <h1>My Header</h1>
+            <h1>My First React Page</h1>
         </header>
     )
 }
