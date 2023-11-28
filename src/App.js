@@ -2,10 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Football_Team from './Components/Football_Team';
 import Trainee from './Components/Trainee';
+import trainer from './data/trainer.json';
 
 // react component called APP
 
 function App() {
+  console.log("Trainers:", trainer);
+
   return (
     <div>
       <header></header>
