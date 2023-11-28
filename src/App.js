@@ -1,41 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import Football_Team from './Components/Football_Team';
-import Trainee from './Components/Trainee';
-import trainer from './data/trainer.json';
-
+import Kingsolution from './Components/Kingsolution';
+import Kings from './data/kings.json';
+import React from "react";
 // react component called APP
 
 function App() {
-  console.log("Trainers:", trainer);
+    console.log("King:", Kingsolution);
+    // declaring kingsName as an array
+    const kingsName = []
 
-  return (
-    <div>
-      <header></header>
-      <h1>Football Teams of the UK</h1>
-      <p>Football Team List</p>
-      <Football_Team teamName="Sheffield United" Founded="1889" League="Premiership" />
-      <br></br>
-      <Football_Team teamName="Sheffield Wednesday" Founded="God Knows" League="Tin Pot League" />
-      <br></br>
-      <Football_Team teamName="Wigan Athletic" Founded="1932" League="League 1" />
-      <br></br>
-      <Football_Team teamName="Liverpool" Founded="1892" League="Premiership" />
-      <br></br>
-      <Football_Team teamName="Manchester United" Founded="1902" League="Premiership" />
-      <br></br>
-      <Football_Team teamName="Arsenal AFC" Founded="1886" League="Premiership" />
-      <br></br>
-      <Football_Team teamName="Manchester City" Founded="1880" League="Premiership" />
-      <br></br>
-      <Trainee name="Rick" age="38" jobtitle="Trainee Software Engineer" />
-      <br></br>
-      <Trainee name="Leo" age="Unknown" jobtitle="Trainee Software Engineer" />
-      <br></br>
-      <Trainee name="Temi" age="Unknown" jobtitle="Trainee Software Engineer" />
-      <br></br>
-    </div >
-  );
+    for (const King of Kings) {
+        //console.log("King:", kingsName);
+        kingsName.push(
+            <Kingsolution name={King.nm} city={King.cty} house={King.hse} years={King.yrs} />
+        );
+
+    }
+
+    return (
+        <div>
+            <h1>Kings Names</h1>
+            {kingsName}
+        </div >
+    );
 }
 
 export default App;
